@@ -25,6 +25,7 @@ describe("Test", ()=>{
         let data2 = {from:account2.address, to:walletContract.address, value:"4000000000000000", data:"0xd0e30db0",gasLimit:"30000000"}
         let data3 = {from:account3.address, to:walletContract.address, value:"5000000000000000", data:"0xd0e30db0",gasLimit:"30000000"}
         
+        //await walletContract.deposit({value: ethers.utils.parseEther("0.003").toString(),gasLimit:"30000000"})
         await account1.sendTransaction(data1)
         await account2.sendTransaction(data2)
         await account3.sendTransaction(data3)
